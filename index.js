@@ -1,7 +1,15 @@
 import express from 'express'
+// import passport from 'passport'
 const app = express()
 
 app.use(express.json()) // enable json deserialising
+
+
+// passport.use(new JWTStrategy(xsenv.getServices({xsuaa:{tag:'xsuaa'}}).xsuaa));
+
+// app.use(passport.initialize());
+// app.use(passport.authenticate('JWT', { session: false }));
+
 
 app.use((req, res, next) => {
     console.log('middleware called') // Изпълнява се преди метода за ендпоинта. Филтри, security и др.
@@ -10,7 +18,6 @@ app.use((req, res, next) => {
     })
     next() // предава изпълнението нататък
 })
-
 
 
 app.get("/", (req, res) => {
@@ -26,7 +33,7 @@ app.all("/all", (req, res) => { // ALL methods Post, Get..
     })
 })
 
-app.post("/parameter/:xyz", (req, res) => { // curl -X POST 'localhost:3000/123'
+app.post("/parameter/:xyz", (req, res) => { // curl -X POST 'localhost:3000/parameter/123'
     console.log(req.params) // { param: '123' }
     console.log(req.params.xyz) // 123
 })
