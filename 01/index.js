@@ -44,5 +44,5 @@ app.post("/query", (req, res) => { // curl -X POST 'localhost:3000/query?abc=123
 })
 
 app.listen(3000, () => {
-    console.log('app started')
+    console.log('app 01 started')
 })
