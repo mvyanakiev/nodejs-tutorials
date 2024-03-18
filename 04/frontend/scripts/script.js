@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     const postsList = document.getElementById("posts-list");
   
-    fetch('http://localhost:8005/')
+    fetch('http://backend:8005/')
       .then(response => response.json())
       .then(posts => {
         posts.forEach(post => {

@@ -6,7 +6,7 @@ var app = express();
 app.use(cors());
 
 var port = process.env.PORT || 8005;
-const uri = 'mongodb://localhost:27017';
+const uri = 'mongodb://mongo:27017';
 const username = 'admin';
 const password = 'admin';
 const dbName = 'blog';
