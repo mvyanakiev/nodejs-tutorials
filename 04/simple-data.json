@@ -1,0 +1,21 @@
+[
+    {
+      "author": "John Doe",
+      "title": "Introduction to Dummy Data",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "date": "2024-01-01T12:00:00.000Z"
+    },
+    {
+      "author": "Jane Smith",
+      "title": "Advanced Dummy Data Techniques",
+      "body": "Nulla vel arcu et eros pulvinar condimentum.",
+      "date": "2024-02-05T15:30:45.123Z"
+    },
+    {
+      "author": "Alice Johnson",
+      "title": "Creating Realistic Dummy Data",
+      "body": "Suspendisse potenti. Sed quis vestibulum turpis.",
+      "date": "2024-03-10T08:15:20.987Z"
+    }
+]
+  
