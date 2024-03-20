@@ -1,7 +1,8 @@
 document.addEventListener("DOMContentLoaded", function() {
     const postsList = document.getElementById("posts-list");
+    const errorHeading = document.getElementById("errorheading");
   
-    fetch('http://backend:8005/')
+    fetch('http://127.0.0.1:8005/')
       .then(response => response.json())
       .then(posts => {
         posts.forEach(post => {
@@ -12,6 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
       })
       .catch(error => {
         console.error('Error fetching blog posts:', error);
+        errorHeading.append(error);
       });
   });
   
